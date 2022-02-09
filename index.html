@@ -1,0 +1,199 @@
+
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Odliczanie</title>
+
+	<style>
+	#footer
+	{
+		clear: both;
+		background-color: rgb(26, 52, 62);
+		color: white;
+		text-align: center;
+		padding: 20px;
+		position: relative;
+		top: -20px;
+        
+	}
+
+	
+	h1 {
+	color: white ;
+	font-family: cursive;
+	font-size: 45px ;
+	}
+	
+	
+	li {
+	background-color: rgb(0,255,255);
+	font-size: 20px;
+	line-height: 50px;
+	border-style: outset;
+	width: 500px;
+	
+	
+	}
+	h2 {
+     color: green;
+	 font-family: Helvetica ;
+	 font-size: 30px ;
+	 font-weight: bold;
+	 text-decoration: underline;
+	}
+	
+	
+	#gif {
+	width: 500px;
+	position: relative;
+	left: 650px;
+	top: -80px;
+	}
+	
+	
+	
+	
+	
+	</style>
+
+<script type="text/javascript" >
+
+	
+function odliczanie()
+	{
+		var dzisiaj = new Date();
+		
+		var dzien = dzisiaj.getDate();
+		if(dzien<10) dzien= "0"+ dzien;
+        var godzina = dzisiaj.getHours();
+		if(godzina<10) godzina= "0"+ godzina;
+        var minuta = dzisiaj.getMinutes();
+		if(minuta<10) minuta= "0"+ minuta;
+        var sekunda = dzisiaj.getSeconds();
+		if(sekunda<10) sekunda= "0"+ sekunda;
+		var miesiac = dzisiaj.getMonth()+1;
+		if(miesiac<10) miesiac= "0"+ miesiac;
+		var rok = dzisiaj.getFullYear();
+		if(rok<10) rok= "0"+ rok;
+		var milisekundy = dzisiaj.getTime();
+		
+		
+		var end = new Date("06/24/2022");
+		var endDzien = end.getDate();
+		if(endDzien<10) endDzien= "0"+ endDzien;
+		var endMiesiac = end.getMonth()+1;
+		if(endMiesiac<10) endMiesiac= "0"+ endMiesiac;
+		var endRok = end.getFullYear();
+		if(endRok<10) endRok= "0"+ endRok;
+		var milisekundy2 = end.getTime();
+		if(endDzien<10) endDzien= "0"+ endDzien;
+        var endgodzina = end.getHours();
+		if(endgodzina<10) endgodzina= "0"+ endgodzina;
+		
+		var pozostalo = milisekundy2 - milisekundy; 
+		var dni = Math.floor(pozostalo/86400000); 
+        var godzinydo = Math.floor(pozostalo/3600000);
+        var minutydo = Math.floor(pozostalo/60000);
+        var sekundydo = Math.floor(pozostalo/1000);
+		
+	
+		
+		document.getElementById("aktualnaData").innerHTML = "Aktualna data: "+dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuta+":"+sekunda; 
+
+		document.getElementById("dataWydarzenia").innerHTML = "Data końca roku szkolnego: "+endDzien+"/"+endMiesiac+"/"+endRok;
+
+		document.getElementById("dniDoWydarzenia").innerHTML ="Do końca roku pozostało: "+ dni+" dni";
+
+        document.getElementById("godzinyDoWydarzenia").innerHTML = +godzinydo+" godzin"
+
+        document.getElementById("minutyDoWydarzenia").innerHTML = +minutydo+" minut"
+
+        document.getElementById("sekundyDoWydarzenia").innerHTML = +sekundydo+" sekund"
+
+        setTimeout("odliczanie()",1000);
+		 
+	}
+	
+	</script>
+	
+	</script>
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+	<div id="container">
+        
+                
+        <br/>
+		<div id="aktualnaData">...</div> 
+		<br/>
+		<br/>
+	<div id="dataWydarzenia">...</div>
+
+    <br/>
+    <br/>
+   
+    <div id="dniDoWydarzenia">...</div>
+
+    <br/>
+	
+	</br>
+	</br>
+
+    <div id="godzinyDoWydarzenia">...</div>
+
+    <br/>
+	
+	</br>
+	</br>
+
+    <div id="minutyDoWydarzenia">...</div>
+
+    <br/>
+
+	</br>
+	</br>
+
+    <div id="sekundyDoWydarzenia">...</div>
+	</br>
+	<script type="text/javascript" >
+	odliczanie();
+</script>
+	<div id="logo">
+        <h1>Odliczanie</h1>
+    </div>
+		<div id="nav">
+			
+			
+		</div>
+		
+		<div id="content">
+			<center><h2></h2></center>
+			
+			
+						
+			
+		</div>
+		
+		<div id="ad">
+			<img src="" />
+			
+		</div>
+		
+		<div id="footer">
+			Odliczanie &copy; 
+		</div>
+        
+	</div>
+
+</body>
+</html>
+
+
+
+
+

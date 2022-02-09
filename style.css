@@ -1,0 +1,142 @@
+
+	#container
+	{
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		height: 870px;
+		position:relative;
+		top: -500px;
+	}
+	
+	
+	#logo
+	{
+		background-color: rgb(26, 52, 62);
+		color: white;
+		text-align: center;
+		padding: 1px;
+		
+	}
+
+#nav
+	{
+		float: left;
+		background-color: rgb(114, 255, 99);
+		width: 120px;
+		min-height: 650px;
+		padding: 20px;
+		font-size: 20px;
+    
+	}
+	#aktualnaData
+	{
+		text-align: center;
+		border: 3px solid #808080;
+		width: 500px;
+		font-size: 30px;
+		position: relative;
+		left: 350px;
+		top: 650px;
+	}
+	#dniDoWydarzenia
+	{
+		text-align: center;
+		border: 3px solid #808080;
+		width: 500px;
+		font-size: 30px;
+		position: relative;
+		left: 350px;
+		top: 590px;
+	}
+
+	#dataWydarzenia
+	{
+		text-align: center;
+		border: 3px solid #808080;
+		width: 500px;
+		font-size: 30px;
+		position: relative;
+		left: 350px;
+		top: 620px;
+	}
+	
+	#godzinyDoWydarzenia
+	{
+		text-align: center;
+		border: 3px solid #808080;
+		width: 500px;
+		font-size: 30px;
+		position: relative;
+		left: 350px;
+		top: 540px;
+	}
+	#minutyDoWydarzenia
+	{
+		text-align: center;
+		border: 3px solid #808080;
+		width: 500px;
+		font-size: 30px;
+		position: relative;
+		left: 350px;
+		top: 490px;
+	}
+	#sekundyDoWydarzenia
+	{
+		text-align: center;
+		border: 3px solid #808080;
+		width: 500px;
+		font-size: 30px;
+		position: relative;
+		left: 350px;
+		top: 440px;
+	}
+
+
+
+
+#description
+{
+	text-align: center;
+	border: 3px solid #808080;
+}
+
+#footer
+{
+	color: #808080;
+	margin-top: 50px;
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+    border: 3px solid blue;
+	letter-spacing: 3px;
+	position: relative;
+	top: -30px;
+}
+#topBar
+{
+	
+	color: #808080;
+	padding: 10px;
+	font-size: 18px;
+	text-align: center;
+    border: 3px solid blue;
+	letter-spacing: 3px;
+	margin-bottom: 50px;
+}
+#ad
+	{
+		float: right;
+		width: 120px;
+		min-height: 650px;
+		padding: 20px;
+		background-color: rgb(114, 255, 99);
+		position: relative;
+		top: -25px;
+	#content
+	{
+		float: left;
+		padding: 20px;
+		width: 1140px;
+	}
